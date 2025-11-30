@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Sindh - Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-area">
+                <i class="fa-solid fa-graduation-cap logo-icon"></i>
+                <div class="logo-text">
+                    <h1>University of Sindh</h1>
+                    <p>Lost & Found Portal</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="items.html">Browse Items</a></li>
+                    <li><a href="report.html">Report Item</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Lost Something? Found Something?</h2>
+            <p>The official portal for students and staff to report and recover lost items on campus.</p>
+            <div class="hero-buttons">
+                <a href="report.html" class="btn btn-secondary">I Lost Something</a>
+                <a href="report.html" class="btn btn-accent">I Found Something</a>
+                <a href="items.html" class="btn btn-primary"><i class="fa-solid fa-check"></i> Item Received</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Recent Activity</h2>
+        <div id="items-container" class="items-grid">
+            <!-- Items will be loaded here via JS -->
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="items.html" class="btn btn-primary">View All Items</a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="mailto:yasirpzshar@gmail.com">Email Us</a>
+                <a href="tel:923003672617">Call Us</a>
+                <a href="#">Contact Admin</a>
+            </div>
+            <p>&copy; 2025 University of Sindh. All Rights Reserved.
+                Developed by Yasir Parveez
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

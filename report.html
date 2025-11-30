@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item - University of Sindh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-area">
+                <i class="fa-solid fa-graduation-cap logo-icon"></i>
+                <div class="logo-text">
+                    <h1>University of Sindh</h1>
+                    <p>Lost & Found Portal</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="items.html">Browse Items</a></li>
+                    <li><a href="report.html" class="active">Report Item</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
+        <h2 class="section-title">Submit a Report</h2>
+
+        <div class="form-container">
+            <form id="report-form">
+                <div class="form-group">
+                    <label class="form-label">I am reporting a...</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="type" value="lost" checked>
+                            <span class="badge lost">LOST ITEM</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="type" value="found">
+                            <span class="badge found">FOUND ITEM</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name" class="form-label">Item Name</label>
+                    <input type="text" id="name" name="name" class="form-control"
+                        placeholder="e.g. Blue Wallet, Calculus Book" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category" class="form-label">Category</label>
+                    <select id="category" name="category" class="form-control">
+                        <option value="electronics">Electronics</option>
+                        <option value="documents">Documents/IDs</option>
+                        <option value="bags">Bags/Wallets</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location" class="form-label">Location (Lost/Found)</label>
+                    <input type="text" id="location" name="location" class="form-control"
+                        placeholder="e.g. Library 2nd Floor, Cafeteria" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" id="date" name="date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea id="description" name="description" class="form-control" rows="4"
+                        placeholder="Provide details like color, brand, distinct marks..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact" class="form-label">Contact Information</label>
+                    <input type="text" id="contact" name="contact" class="form-control"
+                        placeholder="Phone number or Email" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Report</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 University of Sindh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
